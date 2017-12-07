@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Gestion des colis</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="myscripts.js"></script>
+        <link rel="stylesheet" type="text/css" href="mystyle.css">
+    </head>
+
+    <body>
+        <h1>Gestion des colis</h1>
+
+        <fieldset>
+            <legend>Gestion du colis</legend>
+            <form>
+                <tabdle>
+                    <tr><td><label class="labelColis" for="numero">Numéro: </label><input id="numero" name="numero" /></td></tr>
+                    <tr><td><label class="labelColis" for="expedition">Date expédition: </label><input id="expedition" name="expedition" /></td></tr>
+                    <tr><td><label class="labelColis" for="livraison">Date livraison: </label><input id="livraison" name="livraison" /></td></tr>
+                </tabdle>
+                <hr/>
+                <input class="btn" type="button" value="Effacer" onclick="initColis();" title="Réinitialise le formulaire pour créer un nouveau colis"/>
+                <input class="btn" type="button" value="Créer/Modifier" onclick="saveColis();" title="Crée ou modifie le colis courant"/>
+                <input class="btn" type="button" value="Supprimer" onclick="deleteColis();" title="Supprime le colis courant"/>
+
+                <input id="idColis" type="hidden" />
+            </form>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Liste des colis</legend>
+            <div>
+                <span class="entete">Numero</span>
+                <span class="entete">Date expédition</span>
+                <span class="entete">Date livraison</span>
+                <span class="entete">Actions</span>
+            </div>
+
+            <div id="listColis">
+                <!-- Liste générée par JS -->
+            </div>
+        </fieldset>
+    </body>
+</html>

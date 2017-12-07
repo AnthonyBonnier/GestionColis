@@ -1,0 +1,28 @@
+.entete {
+    font-weight: bold;
+    background-color: lightgray;
+    width: 200px;
+    padding: 5px;
+    display: inline-block;
+    text-align: center;
+}
+
+.colisCell {
+    margin-right: 4px;
+    min-width: 200px;
+    padding: 5px;
+    display: inline-block;
+    text-align: center;
+}
+
+.labelColis {
+    width: 120px;
+    display: inline-block;
+}
+
+.selectBtn {
+    margin-left: 55px;
+}
+.btn {
+    width: 100px;
+}
